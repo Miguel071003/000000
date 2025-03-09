@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/img/img1.png" type="img/png">
+</head>
+<body>
+    <header class="header">
+        <!--Barra de navegación-->
+        <input type="checkbox" id="open-menu" class="header__checkbox">
+        <label for="open-menu" class="header__open-nav-button" role="button">=</label>
+        <div class="header__title-container">
+            <h1>Física en contexto</h1>
+        </div>
+        <nav class="header__nav">
+            <ul class="header__nav-list">
+                <li class="header__nav-item"><a href="/inicio.html">Inicio</a></li>
+                <li class="header__nav-item"><a href="#">Fórmulas</a></li>
+                <li class="header__nav-item"><a href="#">Recursos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <div class="section__modal-menu">
+            <input type="checkbox" id="open-modal" class="section__modal-checkbox">
+            <label for="open-modal" class="section__modal-button" role="button">=</label>
+            <div class="modal">
+                <div class="modal__content">
+                    <span class="modal__close-button">X</span>
+                    <div class="modal__menu">
+                        <h3>Modulo 1: Introducción a la Física</h3>
+                        <a onclick="changeContent('Concepto 1')">¿Qué es y por qué es importante la física?</a>
+                        <a onclick="changeContent('Concepto 2')">Concepto 2</a>
+                        <a onclick="changeContent('Concepto 3')">Concepto 3</a>
+                        <a onclick="changeContent('Concepto 4')">Concepto 4</a>
+                        <a onclick="changeContent('Concepto 5')">Concepto 5</a>
+                    </div>
+                </div>
+                <script>
+                    document.querySelector(".modal__close-button").addEventListener("click", () => {
+                        document.querySelector(".modal").style.display = "none";
+                    });
+                </script>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="section__menu">
+            <h3>Modulo 1: Introducción a la Física</h3>
+            <a onclick="changeContent('Concepto 1')">¿Qué es y por qué es importante la física?</a>
+            <a onclick="changeContent('Concepto 2')">Concepto 2</a>
+            <a onclick="changeContent('Concepto 3')">Concepto 3</a>
+            <a onclick="changeContent('Concepto 4')">Concepto 4</a>
+            <a onclick="changeContent('Concepto 5')">Concepto 5</a>
+        </div>
+    </section>
+    <section>
+        <div class="section__content">
+            <div id="Concepto 1" class="description">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam inventore sunt adipisci, earum odio, ratione eligendi sint hic laboriosam deleniti aperiam dolores. Deleniti, provident? Voluptatibus doloribus accusamus consequuntur illum aperiam?
+                </p>
+            </div>
+            <div id="Concepto 2" class="description">
+                <p>
+                    Descripción para el Concepto 2. Aquí puedes agregar más detalles relevantes para este concepto.
+                </p>
+            </div>
+            <div id="Concepto 3" class="description">
+                <p>
+                    Descripción para el Concepto 3. Aquí puedes agregar más detalles relevantes para este concepto.
+                </p>
+            </div>
+            <div id="Concepto 4" class="description">
+                <p>
+                    Descripción para el Concepto 4. Aquí puedes agregar más detalles relevantes para este concepto.
+                </p>
+            </div>
+            <div id="Concepto 5" class="description">
+                <p>
+                    Descripción para el Concepto 5. Aquí puedes agregar más detalles relevantes para este concepto.
+                </p>
+            </div>
+        </div>
+        <script>
+            function changeContent(concept) {
+            // Primero, ocultar todos los conceptos
+            const descriptions = document.querySelectorAll('.description');
+            descriptions.forEach((desc) => {
+                desc.style.display = 'none';  // Oculta todos los divs con la clase .description
+            });
+
+            // Luego, mostrar el concepto seleccionado
+            const selectedConcept = document.getElementById(concept);
+            if (selectedConcept) {
+                selectedConcept.style.display = 'block';  // Muestra el concepto seleccionado
+            }
+        }
+        </script>
+    </section>
+</body>
+</html>

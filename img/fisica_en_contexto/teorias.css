@@ -1,0 +1,137 @@
+body {
+    background-color: #daeaf6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Barra de navegación */
+.navbar {
+    background-color: #9cadce;
+    width: 100%;
+    margin-bottom: 30px;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+/* Lista de Barra de navegación */
+.navbar__list {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+}
+
+/* Módulo de Barra de navegación */
+.navbar__list-item {
+    margin: 0;
+}
+
+/* Enlace de Barra de navegación */
+.navbar__link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+/* Efecto del enlace de Barra de navegación */
+.navbar__link:hover {
+    color: #d4afb9;
+}
+
+/* Iconos de Barra de navegación */
+.navbar__list-item-icon {
+    width: 40px;
+    height: auto;
+    margin-right: 8px;
+}
+
+h1 {
+    color: #fff;
+    text-align: center;
+    margin: 10px;
+}
+
+/* Contenido */
+/*Contenido*/
+.container {
+    background-color: #daeaf6;
+    width: 95%;
+    max-width: 1500px;
+    margin: auto;
+    padding: 40px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Módulo */
+.container__item {
+    margin-bottom: 15px;
+    margin-right: 15px;
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+    min-width: 200px;
+    max-height: 300px;
+    min-height: 200px;
+    border-radius: 10px;
+}
+
+.block1,
+.block2,
+.block3 {
+    width: 100%;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
+/* Estilos para ítems específicos */
+.block1 {
+    background-color: #f8b0b0;
+    border: 4px solid #e87a7a;
+    color: #d32f2f;
+}
+
+.block1:hover {
+    border: 5px solid;
+    transform: scale(1.05); 
+    transition: all 0.3s ease-in-out; 
+}
+
+.block2 {
+    background-color: #a8e2a3;
+    border: 4px solid #6bc76c;
+    color: #43a047;
+}
+
+.block2:hover {
+    border: 5px solid;
+    transform: scale(1.05); 
+    transition: all 0.3s ease-in-out; 
+}
+
+.block3 {
+    background-color: #d1a1e1;
+    border: 4px solid #b074cf;
+    color: #7b1fa2;
+}
+
+.block3:hover {
+    border: 5px solid;
+    transform: scale(1.05); 
+    transition: all 0.3s ease-in-out; 
+}
