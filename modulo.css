@@ -134,6 +134,7 @@ body,div, ul, nav, footer, a, li, label {
     color: #48e;
     display: flex;
     justify-content: center;
+    margin: 20px;
 }
 
 .menu h3 {
